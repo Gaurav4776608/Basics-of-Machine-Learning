@@ -1,0 +1,11 @@
+/Question 1
+/Usage of methods such as floor(), ceil(), sqrt(), isqrt(), gcd() etc.
+
+import math
+
+x = 5.7
+print("floor:", math.floor(x))
+print("ceil:", math.ceil(x))
+print("sqrt:", math.sqrt(16))
+print("isqrt:", math.isqrt(16))
+print("gcd:", math.gcd(24, 36))
