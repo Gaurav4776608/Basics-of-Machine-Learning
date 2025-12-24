@@ -1,0 +1,9 @@
+/Question 6
+/Find the determinant of a matrix using scipy
+
+from scipy import linalg
+
+mat = np.array([[4, 2],
+                [3, 1]])
+
+print("Determinant using SciPy:", linalg.det(mat))
