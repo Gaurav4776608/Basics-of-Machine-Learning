@@ -1,0 +1,10 @@
+/Question 3
+/Usage of methods such as det(), eig() etc.
+
+matrix = np.array([[23, 45],
+                   [57, 75]])
+
+print("Determinant:", np.linalg.det(matrix))
+eigenvalues, eigenvectors = np.linalg.eig(matrix)
+print("Eigenvalues:", eigenvalues)
+print("Eigenvectors:\n", eigenvectors)
