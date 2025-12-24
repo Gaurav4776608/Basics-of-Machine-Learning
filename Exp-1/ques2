@@ -1,0 +1,15 @@
+/Question 2
+/Usage of attributes of array such as ndim, shape, size, methods such as sum(), mean(), sort(), sin() etc.
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+
+print("Array:", arr)
+print("ndim:", arr.ndim)
+print("shape:", arr.shape)
+print("size:", arr.size)
+print("sum:", np.sum(arr))
+print("mean:", np.mean(arr))
+print("sorted:", np.sort(arr))
+print("sin:", np.sin(arr))
