@@ -1,0 +1,7 @@
+/Question 5
+/Generator and ommatrix using numpy
+
+print("Zeros Matrix:\n", np.zeros((2, 2)))
+print("Ones Matrix:\n", np.ones((2, 2)))
+print("Identity Matrix:\n", np.eye(3))
+print("Random Matrix:\n", np.random.rand(2, 2))
