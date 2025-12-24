@@ -1,0 +1,7 @@
+/Question 7
+/Find the eigen value and eigen vector using scipy
+
+eig_val, eig_vec = linalg.eig(mat)
+
+print("Eigen Values:", eig_val)
+print("Eigen Vectors:\n", eig_vec)
