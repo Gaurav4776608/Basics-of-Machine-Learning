@@ -1,0 +1,12 @@
+/Question 4
+/Consider a list data type (1D) then reshape it to 2D, 3D using numpy
+
+lst = [1, 2, 3, 4, 5, 6]
+
+arr1d = np.array(lst)
+arr2d = arr1d.reshape(2, 3)
+arr3d = arr1d.reshape(1, 2, 3)
+
+print("1D Array:", arr1d)
+print("2D Array:\n", arr2d)
+print("3D Array:\n", arr3d)
