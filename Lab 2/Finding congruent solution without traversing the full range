@@ -1,0 +1,32 @@
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+m = int(input("Enter third number: "))
+
+def gcd(a, m):
+    a = abs(a)
+    m = abs(m)
+    while m!= 0:
+        a, m = m, a%m
+    return a
+
+#Finding congruent solution without traversing the full range
+
+def congrenceWithoutTraversingFullRange(a, b, m):
+    d = gcd(a, m)
+    if b%d != 0:
+        print("Solution does not exist")
+        return
+    else:
+        for i in range(m):
+            if (((a*i)-b) % m == 0):
+                x = i
+                break
+        print(f"The congruence equarion has {d} solutions")
+        m1 = (int)(m/d)
+        solutions = []
+        for i in range(d):
+            ans = (x+(i*m1)) % m
+            solutions.append(ans)
+        print(f"The solutions without traversing full range are {solutions} % {m}")
+
+congrenceWithoutTraversingFullRange(a, b, m)
