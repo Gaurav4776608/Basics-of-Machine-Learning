@@ -1,0 +1,27 @@
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+m = int(input("Enter third number: "))
+
+def gcd(a, m):
+    a = abs(a)
+    m = abs(m)
+    while m!= 0:
+        a, m = m, a%m
+    return a
+
+#Finding congruent solution by traversing the full range
+
+def congruenceTraversingFullRange(a, b, m):
+    d = gcd(a, m)
+    if b%d != 0:
+        print("Solution does not exist")
+        return
+    else:
+        solutions = []
+        for x in range(m):
+            if (((a*x)-b) % m == 0):
+                solutions.append(x)
+        print(f"The congruence equation has {d} solutions.")
+        print(f"The solutions by traversing full range are {solutions} % {m}")
+
+congruenceTraversingFullRange(a, b, m)
